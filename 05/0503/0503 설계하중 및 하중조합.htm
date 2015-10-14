@@ -1,0 +1,384 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<HEAD>
+<META NAME="Generator" CONTENT="Haansoft HWP 8.0.0.466">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=euc-kr">
+<TITLE>0503 설계하중 및 하중조합</TITLE>
+<STYLE>
+<!--
+P.HStyle0, LI.HStyle0, DIV.HStyle0
+	{style-name:"바탕글"; margin-left:0.0pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+P.HStyle1, LI.HStyle1, DIV.HStyle1
+	{style-name:"본문"; margin-left:15.0pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+P.HStyle2, LI.HStyle2, DIV.HStyle2
+	{style-name:"개요 1"; margin-left:10.0pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+P.HStyle3, LI.HStyle3, DIV.HStyle3
+	{style-name:"개요 2"; margin-left:20.0pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+P.HStyle4, LI.HStyle4, DIV.HStyle4
+	{style-name:"개요 3"; margin-left:30.0pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+P.HStyle5, LI.HStyle5, DIV.HStyle5
+	{style-name:"개요 4"; margin-left:40.0pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+P.HStyle6, LI.HStyle6, DIV.HStyle6
+	{style-name:"개요 5"; margin-left:50.0pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+P.HStyle7, LI.HStyle7, DIV.HStyle7
+	{style-name:"개요 6"; margin-left:60.0pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+P.HStyle8, LI.HStyle8, DIV.HStyle8
+	{style-name:"개요 7"; margin-left:70.0pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+P.HStyle9, LI.HStyle9, DIV.HStyle9
+	{style-name:"쪽 번호"; margin-left:0.0pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬돋움; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+P.HStyle10, LI.HStyle10, DIV.HStyle10
+	{style-name:"머리말"; margin-left:0.0pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:150%; font-size:9.0pt; font-family:함초롬돋움; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+P.HStyle11, LI.HStyle11, DIV.HStyle11
+	{style-name:"각주"; margin-left:13.1pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:-13.1pt; line-height:130%; font-size:9.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+P.HStyle12, LI.HStyle12, DIV.HStyle12
+	{style-name:"미주"; margin-left:13.1pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:-13.1pt; line-height:130%; font-size:9.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+P.HStyle13, LI.HStyle13, DIV.HStyle13
+	{style-name:"메모"; margin-left:0.0pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:130%; font-size:9.0pt; font-family:함초롬돋움; letter-spacing:0.5pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+-->
+</STYLE>
+</HEAD>
+
+<BODY>
+
+<P CLASS=HStyle0><SPAN STYLE='font-family:"맑은 고딕";'>0503 설계하중 및 하중조합</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.1 일반사항</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(1) 철근콘크리트 구조물의 부재는 원칙적으로 0503.3.3에서 규정한 하중계수와 강도감소계수를 사용하여 이 장의 규정에 따른 충분한 강도를 갖도록 설계하여야 한다. 다만, 발주자가 필요하다고 인정하는 경우 종전에 적용하던 기준인 대체설계법의 하중계수 및 강도감소계수를 사용하여 설계할 수 있다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(2) 이 절의 규정은 예상되는 모든 하중조합에 구조물이 저항할 수 있게 설계되어야 한다는 원칙에 근거를 두고 있다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(3) 이 절에서 고려하는 활하중에 대한 하중조합은 군집하중이나 기계하중 등과 같이 적재물에 의한 활하중을 대상으로 한다. 적재되는 하중이 교통하중 등과 같이 하중의 특성이 다른 경우에는 관련 기준의 하중조합을 사용하거나 전문가의 판단에 의해 하중조합을 결정하여야 한다. </SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(4) 사용하중은 정부 및 시설물의 관리 주체가 제정한 관련규정에 따라야 한다. 다만, 활하중은 합리적인 방법에 의하여 조사된 값을 사용할 수 있다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(5) 풍하중과 지진하중에 대해서는 구조물이 수평력에 의하여 적절하게 저항할 수 있도록 설계하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'><BR></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.2 하중과 외력</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.2.1 적용하중</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>구조물의 설계에 있어서 시공 중 또는 완성 후 구조물에 작용하는 활하중, 고정하중, 풍하중, 지진하중, 적설하중, 토압과 유체압 외에 프리스트레스 힘, 크레인 하중, 진동, 충격, 건조수축, 크리프와 온도변화 및 탄성수축, 받침부의 부등침하 등 각종 하중 및 외적 작용의 영향을 고려하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.2.2 하중의 계산</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>구조설계에 적용되는 하중과 외력은 제3장의 규정에 따라야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.3 강도</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.3.1 일반사항</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(1) 구조물 및 구조부재는 모든 단면에서 이 기준에서 정한 하중과 힘의 조합에 의하여 계산한 소요강도 이상의 설계강도를 갖도록 설계하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(2) 구조부재는 사용하중에 대해서 충분한 기능을 확보할 수 있도록 이 기준의 다른 모든 규정에도 적합하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.3.2 소요강도</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(1) 철근콘크리트 구조물을 설계할 때 아래에 제시된 하중계수와 하중조합을 모두 고려하여 해당 구조물에 작용하는 최대 소요강도에 대하여 만족하도록 설계하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'><IMG src=".\PIC12BE.gif" width="125" height="16" vspace="0" hspace="0" border="0">(0503.3.1)</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'><IMG src=".\PIC12CF.gif" width="257" height="16" vspace="0" hspace="0" border="0"></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'><IMG src=".\PIC12FF.gif" width="51" height="16" vspace="0" hspace="0" border="0">&nbsp;또는 <IMG src=".\PIC1457.gif" width="8" height="13" vspace="0" hspace="0" border="0"> 또는 <IMG src=".\PIC1468.gif" width="16" height="13" vspace="0" hspace="0" border="0">(0503.3.2)</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'><IMG src=".\PIC1479.gif" width="113" height="16" vspace="0" hspace="0" border="0">&nbsp;또는 <IMG src=".\PIC147A.gif" width="8" height="13" vspace="0" hspace="0" border="0"> 또는 <IMG src=".\PIC149A.gif" width="18" height="13" vspace="0" hspace="0" border="0"></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'><IMG src=".\PIC149B.gif" width="45" height="13" vspace="0" hspace="0" border="0">&nbsp;또는 <IMG src=".\PIC14AC.gif" width="48" height="13" vspace="0" hspace="0" border="0">(0503.3.3)</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'><IMG src=".\PIC14CC.gif" width="299" height="16" vspace="0" hspace="0" border="0">(0503.3.4)</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'><IMG src=".\PIC14DC.gif" width="182" height="13" vspace="0" hspace="0" border="0">(0503.3.5)</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'><IMG src=".\PIC14ED.gif" width="219" height="16" vspace="0" hspace="0" border="0"></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'><IMG src=".\PIC150D.gif" width="101" height="16" vspace="0" hspace="0" border="0">&nbsp;또는 <IMG src=".\PIC150E.gif" width="8" height="13" vspace="0" hspace="0" border="0"> 또는 <IMG src=".\PIC151F.gif" width="16" height="13" vspace="0" hspace="0" border="0">(0503.3.6)</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'><IMG src=".\PIC1530.gif" width="214" height="16" vspace="0" hspace="0" border="0">(0503.3.7)</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'><IMG src=".\PIC155F.gif" width="212" height="16" vspace="0" hspace="0" border="0">(0503.3.8)</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(2)차고, 공공집회 장소 및 <IMG src=".\PIC158F.gif" width="11" height="13" vspace="0" hspace="0" border="0">이 5.0kN/m2 이상인 모든 장소 이외에는 식(0503.3.3), 식(0503.3.4) 및 식(0503.3.5)에서 활하중 <IMG src=".\PIC15A0.gif" width="11" height="13" vspace="0" hspace="0" border="0">에 대한 하중계수를 0.5로 감소시킬 수 있다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(3)식(0503.3.3), 식(0503.3.4) 및 식(0503.3.7)에서 풍하중 <IMG src=".\PIC15A1.gif" width="17" height="13" vspace="0" hspace="0" border="0">에 대하여 방향성계수로 감소한 값을 사용하는 경우에는 0.65<IMG src=".\PIC15C1.gif" width="17" height="13" vspace="0" hspace="0" border="0"> 대신 0.8<IMG src=".\PIC15C2.gif" width="17" height="13" vspace="0" hspace="0" border="0">, 1.3<IMG src=".\PIC15C3.gif" width="17" height="13" vspace="0" hspace="0" border="0"> 대신 1.6<IMG src=".\PIC15D4.gif" width="17" height="13" vspace="0" hspace="0" border="0">를 각각 사용하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(4)식(0503.3.5)와 식(0503.3.8)에서 지진하중 <IMG src=".\PIC15D5.gif" width="12" height="13" vspace="0" hspace="0" border="0">에 대하여 사용수준 지진력을 사용하는 경우에는 1.0<IMG src=".\PIC15E5.gif" width="12" height="13" vspace="0" hspace="0" border="0"> 대신 1.4<IMG src=".\PIC15E6.gif" width="12" height="13" vspace="0" hspace="0" border="0">를 사용한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(5)식(0503.3.7) 및 식(0503.3.8)에서 흙, 지하수 또는 기타 재료의 횡압력에 의한 하중 <IMG src=".\PIC15F7.gif" width="19" height="16" vspace="0" hspace="0" border="0">와 <IMG src=".\PIC1608.gif" width="18" height="16" vspace="0" hspace="0" border="0">로 인한 하중효과가 <IMG src=".\PIC1609.gif" width="17" height="13" vspace="0" hspace="0" border="0"> 또는 <IMG src=".\PIC1619.gif" width="12" height="13" vspace="0" hspace="0" border="0">로 인한 하중효과를 상쇄시키는 경우에는 <IMG src=".\PIC161A.gif" width="18" height="16" vspace="0" hspace="0" border="0"> 및 <IMG src=".\PIC162B.gif" width="19" height="16" vspace="0" hspace="0" border="0">에 대한 하중계수를 0으로 한다. 만일 측면 토압이 다른 하중에 의한 구조물의 거동을 감소시키는 저항효과를 준다면 이를 <IMG src=".\PIC162C.gif" width="19" height="16" vspace="0" hspace="0" border="0">에 포함시키지 않아야 하지만 설계강도를 계산할 때에는 <IMG src=".\PIC163D.gif" width="19" height="16" vspace="0" hspace="0" border="0">의 효과를 고려하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(6)구조물에 충격의 영향이 작용하는 경우 활하중(<IMG src=".\PIC163E.gif" width="9" height="13" vspace="0" hspace="0" border="0">)을 충격효과(<IMG src=".\PIC164E.gif" width="8" height="13" vspace="0" hspace="0" border="0">)가 포함된 (<IMG src=".\PIC164F.gif" width="30" height="13" vspace="0" hspace="0" border="0">)로 대체하여 상기 식들을 적용하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(7)부등침하, 크리프, 건조수축, 팽창콘크리트의 팽창량 및 온도변화는 사용구조물의 실제적 상황을 고려하여 계산하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(8)포스트텐션 정착부 설계에 대하여 최대 프리스트레싱강재 긴장력에 하중계수 1.2를 적용하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.3.3 설계강도</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.3.3.1 공칭강도</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>구조물의 부재, 부재 간의 연결부 및 각 부재 단면의 휨모멘트, 축력, 전단력, 비틀림모멘트에 대한 설계강도는 이 장의 규정과 가정에 따라 정해지는 공칭강도에 0503.3.3.2의 강도감소계수 <IMG src=".\PIC1660.gif" width="10" height="13" vspace="0" hspace="0" border="0">를 곱한 값으로 하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.3.3.2 강도감소계수</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>강도감소계수는 다음 규정에 따라야 한다. </SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(1) 0506.2.2(4)에 정의된 인장지배 단면<SPAN style='HWP-TAB:1;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>0.85</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(2) 0506.2.2(3)에 정의된 압축지배 단면</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>① 나선철근 규정에 따라 나선철근으로 보강된 철근콘크리트부재<SPAN style='HWP-TAB:1;'>&nbsp;</SPAN>0.70</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>② 그 이외의 철근콘크리트 부재<SPAN style='HWP-TAB:1;'>&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>0.65</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>③ 공칭축강도에서 최외단 인장철근의 순인장변형률 <IMG src=".\PIC1670.gif" width="12" height="16" vspace="0" hspace="0" border="0">가 압축지배와 인장지배 단면 사이인 변화구간 단면일 경우에는 <IMG src=".\PIC1671.gif" width="12" height="16" vspace="0" hspace="0" border="0">가 압축지배 변형률 한계에서 <IMG src=".\PIC1682.gif" width="34" height="13" vspace="0" hspace="0" border="0">로 증가함에 따라 <IMG src=".\PIC1693.gif" width="10" height="13" vspace="0" hspace="0" border="0">값을 압축지배 단면에 대한 값에서 0.85까지 증가시킨다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(3) 전단력과 비틀림모멘트<SPAN style='HWP-TAB:1;'>&nbsp;</SPAN>0.75</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(4) 콘크리트의 지압력(포스트텐션 정착부나 스트럿-타이 모델은 제외)<SPAN style='HWP-TAB:1;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>0.65</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(5) 포스트텐션 정착구역<SPAN style='HWP-TAB:1;'>&nbsp;&nbsp;&nbsp;</SPAN>0.85</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(6) 스트럿-타이 모델</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>① 스트럿, 절점부 및 지압부<SPAN style='HWP-TAB:1;'>&nbsp;</SPAN>0.75</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>② 타이<SPAN style='HWP-TAB:1;'>&nbsp;</SPAN>0.85 </SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(7) 긴장재 묻힘길이가 정착길이보다 작은 프리텐션 부재의 휨단면</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>① 부재의 단부에서전달길이 단부까지<SPAN style='HWP-TAB:1;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>0.75&nbsp; </SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>②전달길이 단부에서정착길이 단부 사이에서는 <IMG src=".\PIC1694.gif" width="10" height="13" vspace="0" hspace="0" border="0">값은 0.75에서 0.85까지 선형적으로 증가시킨다. 긴장재가 부재 단부까지 부착되지 않은 경우에는 부착력저하 길이의 끝에서부터 긴장재가 매입된다고 가정하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(8) 무근콘크리트의 휨모멘트, 압축력, 전단력, 지압력<SPAN style='HWP-TAB:1;'>&nbsp;&nbsp;&nbsp;</SPAN>0.55</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.3.4 철근의 설계강도</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>긴장재를 제외하고는 철근의 설계기준항복강도 <IMG src=".\PIC16A4.gif" width="15" height="16" vspace="0" hspace="0" border="0">는 550MPa를 초과하지 않아야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4 구조해석 일반</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4.1 해석방법</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4.1.1 탄성해석</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>골조 또는 연속구조물의 모든 부재는 0503.4.2에 따라 수정되는 경우 이외는 계수하중으로 탄성이론에 의해 결정된 최대 단면력에 대하여 설계하여야 한다. 또한 0503.4.4에서 0503.4.7까지 단순화된 가정을 사용하여 설계할 수 있다. </SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4.1.2 근사해법</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>프리스트레스트 콘크리트를 제외하고 일반적인 구조형태, 경간 및 층고를 갖는 건물 등은 아래 0503.4.1.3과 0503.4.1.4의 근사해법을 사용하여 해석할 수 있다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4.1.3 근사해석 적용 조건</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>연속보 또는 1방향슬래브는 다음 조건을 모두 만족하는 경우 0503.4.1.4의 근사해법을 적용할 수 있다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(1) 2경간 이상인 경우</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(2) 인접 2경간의 차이가 짧은 경간의 20% 이하인 경우</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(3) 등분포하중이 작용하는 경우</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(4) 활하중이 고정하중의 3배를 초과하지 않는 경우</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(5) 부재의 단면 크기가 일정한 경우</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4.1.4 휨모멘트와 전단력</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4.1.3의 규정을 만족하는 연속보 또는 1방향슬래브의 휨모멘트와 전단력은 다음에 따라 계산할 수 있다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(1) 정모멘트</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>① 최외측 경간</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>불연속 단부가 구속되지 않은 경우&nbsp; <IMG src=".\PIC16A5.gif" width="55" height="18" vspace="0" hspace="0" border="0"></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>불연속 단부가 받침부와 일체로 된 경우&nbsp; <IMG src=".\PIC16B6.gif" width="55" height="18" vspace="0" hspace="0" border="0"></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>② 내부경간&nbsp; <IMG src=".\PIC16C7.gif" width="55" height="18" vspace="0" hspace="0" border="0"></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(2) 부모멘트 </SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>① 첫 번째 내부 받침부 외측면 부모멘트</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>2개의 경간일 때&nbsp; <IMG src=".\PIC16D7.gif" width="48" height="18" vspace="0" hspace="0" border="0"></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>3개 이상의 경간일 때&nbsp; <IMG src=".\PIC16D8.gif" width="55" height="18" vspace="0" hspace="0" border="0"></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>② ①이외의 내부 받침부의 부모멘트&nbsp; <IMG src=".\PIC16E9.gif" width="55" height="18" vspace="0" hspace="0" border="0"></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>③ 모든 받침부면의 부모멘트로서 경간 3m 이하인 슬래브와 경간의 각 단부에서 보강성에 대한 기둥강성의 합의 비가 8 이상인 보&nbsp;&nbsp; <IMG src=".\PIC16F9.gif" width="55" height="18" vspace="0" hspace="0" border="0"></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>④ 받침부와 일체로 된 부재의 최외단 받침부 내면에서 부모멘트</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>받침부가 테두리보인 경우&nbsp; <IMG src=".\PIC170A.gif" width="55" height="18" vspace="0" hspace="0" border="0"></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>받침부가 기둥인 경우&nbsp; <IMG src=".\PIC170B.gif" width="55" height="18" vspace="0" hspace="0" border="0"></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(3) 전단력</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>① 첫 번째 내부 받침부 외측면에서 전단력&nbsp; <IMG src=".\PIC171C.gif" width="68" height="16" vspace="0" hspace="0" border="0"></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>② ① 이외의 받침부면에서 전단력&nbsp; <IMG src=".\PIC172C.gif" width="43" height="16" vspace="0" hspace="0" border="0"></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4.2 연속 휨부재의 부모멘트 재분배</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(1) 근사해법에 의해 휨모멘트를 계산한 경우를 제외하고, 탄성이론에 의하여 산정한 연속 휨부재 받침부의 부모멘트는 20% 이내에서 1,000<IMG src=".\PIC172D.gif" width="12" height="16" vspace="0" hspace="0" border="0">% 만큼 증가 또는 감소시킬 수 있다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(2) 경간 내의 단면에 대한 휨모멘트의 계산은 수정된 부모멘트를 사용하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(3) 부모멘트의 재분배는 휨모멘트를 감소할 단면에서 최외단 인장철근의 순인장 변형률 <IMG src=".\PIC173E.gif" width="12" height="16" vspace="0" hspace="0" border="0">가 0.0075 이상인 경우에만 가능하다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4.3 탄성계수</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4.3.1 콘크리트의 탄성계수</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>콘크리트의 탄성계수는 다음과 같이 계산하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(1)콘크리트의 할선탄성계수는 콘크리트의 단위질량 <IMG src=".\PIC174F.gif" width="18" height="16" vspace="0" hspace="0" border="0">의 값이 1,450～2,500 kg/m3인 콘크리트의 경우 식(0503.4.1)에 따라 계산하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'><IMG src=".\PIC175F.gif" width="127" height="18" vspace="0" hspace="0" border="0">(MPa) (0503.4.1)</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>다만, 보통골재를 사용한 콘크리트(<IMG src=".\PIC178F.gif" width="18" height="16" vspace="0" hspace="0" border="0">＝2,300kg/m3)의 경우는 식(0503.4.2)를 이용할 수 있다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>&nbsp;&nbsp;<IMG src=".\PIC17A0.gif" width="103" height="18" vspace="0" hspace="0" border="0">(MPa) (0503.4.2)</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>여기서,</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>&nbsp;&nbsp;<IMG src=".\PIC17EF.gif" width="75" height="16" vspace="0" hspace="0" border="0">(MPa) (0503.4.3)</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>크리프 계산에 사용되는 콘크리트의 초기접선탄성계수와 할선탄성계수와의 관계는 식(0503.4.4)와 같다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>&nbsp;&nbsp;<IMG src=".\PIC17FF.gif" width="74" height="16" vspace="0" hspace="0" border="0">&nbsp;&nbsp;(0503.4.4)</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4.3.2 철근의 탄성계수</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>철근의 탄성계수는 다음 식(0503.4.5)의 값을 표준으로 하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'><IMG src=".\PIC1820.gif" width="81" height="16" vspace="0" hspace="0" border="0">(MPa)&nbsp; (0503.4.5)</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4.3.3 긴장재의 탄성계수</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>긴장재의 탄성계수는 실험에 의하여 결정하거나 제조자에 의하여 주어지는 것이 원칙이지만 그렇지 않은 경우 다음 식(0503.4.6)의 값을 표준으로 하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'><IMG src=".\PIC1830.gif" width="87" height="16" vspace="0" hspace="0" border="0">(MPa)<SPAN style='HWP-TAB:1;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>(0503.4.6)</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4.3.4 형강의 탄성계수</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>형강의 탄성계수는 다음 식(0503.4.7)의 값을 표준으로 하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'><IMG src=".\PIC1841.gif" width="87" height="16" vspace="0" hspace="0" border="0">(MPa)<SPAN style='HWP-TAB:1;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>(0503.4.7)</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4.4 강성</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(1) 기둥, 벽체, 바닥판 및 지붕 시스템의 상대적인 휨강성과 비틀림강성을 구할 때 어떠한 합리적 가정도 사용할 수 있다. 다만, 채택한 가정은 해당 해석과정을 통하여 일관성이 있어야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(2) 휨모멘트를 결정하거나 부재를 설계할 때 헌치의 영향을 고려하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4.5 경간</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(1) 받침부와 일체로 되어 있지 않은 부재는 순경간에 보나 슬래브의 두께를 더한 값을 경간으로 하여야 한다. 그러나 그 값이 받침부의 중심간 거리를 초과할 필요는 없다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(2) 골조 또는 연속구조물의 해석에서 휨모멘트를 구할 때 사용하는 경간은 받침부의 중심간 거리로 하여야 한다. 받침부와 일체로 시공된 보의 경우 받침부 전면의 모멘트로 설계할 수 있다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(3) 받침부와 일체로 된 3m 이하의 순경간을 갖는 슬래브는 그 지지보의 폭을 무시하고 순경간을 경간으로 하는 연속보로 해석할 수 있다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4.6 기둥</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(1) 기둥을 설계할 때 축력은 모든 바닥판 또는 지붕에 작용하는 계수하중으로부터 기둥에 전달된 힘으로 취하여야 하고, 최대 휨모멘트는 그 기둥에 인접한 바닥판 또는 지붕의 한쪽 경간에 작용하는 계수하중에 의한 휨모멘트로 취하여야 한다. 또한 축하중에 대한 휨모멘트의 비가 최대가 되는 재하조건도 고려하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(2) 골조 또는 연속구조물을 설계할 때 내&#8228;외부 기둥의 불균형 바닥판 하중의 영향과 기타 편심하중에 의한 영향을 고려하여야 한다. </SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(3) 연직하중으로 인한 기둥의 휨모멘트를 계산할 때 구조물과 일체로 된 기둥의 먼 단부는 고정되어 있다고 가정할 수 있다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(4) 바닥판으로부터 기둥으로 전달되는 모든 휨모멘트는 그 바닥판 상하측 각 기둥의 상대강성과 구속조건에 따라 상하측 각 기둥에 분배시켜야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4.7 활하중의 배치</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(1) 활하중은 해당 바닥판에만 재하된 것으로 보아 해석할 수 있으며, 이 때 구조물과 일체로 시공된 기둥의 먼 단부는 고정된 것으로 가정할 수 있다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(2) 고정하중과 활하중의 하중조합은 다음과 같은 2가지만으로 제한하여 사용할 수 있다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>① 모든 경간에 재하된 계수고정하중과 2인접 경간에 만재된 계수활하중의 조합하중</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>② 모든 경간에 재하된 계수고정하중과 한 경간씩 건너서 만재된 계수활하중과의 조합하중</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4.8 T형보</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4.8.1 일체 T형보</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>슬래브와 보가 일체로 타설된 T형보의 유효폭 <IMG src=".\PIC1852.gif" width="8" height="13" vspace="0" hspace="0" border="0">는 다음 중 가장 작은 값으로 결정하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(1) T형보</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>① (양쪽으로 각각 내민 플랜지 두께의 8배씩)<IMG src=".\PIC1862.gif" width="29" height="16" vspace="0" hspace="0" border="0"></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>② 양쪽의 슬래브의 중심간 거리</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>③ 보의 경간의 1/4 </SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(2) 반T형보</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>① (한쪽으로 내민 플랜지 두께의 6배)<IMG src=".\PIC1863.gif" width="29" height="16" vspace="0" hspace="0" border="0"></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>② (보의 경간의 1/12)＋<IMG src=".\PIC1883.gif" width="13" height="16" vspace="0" hspace="0" border="0"></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>③ (인접 보와의 내측 거리의 1/2)＋<IMG src=".\PIC1894.gif" width="13" height="16" vspace="0" hspace="0" border="0"></SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4.8.2 독립 T형보</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>독립 T형보의 추가 압축면적을 제공하는 플랜지의 두께는 복부폭의 1/2 이상이어야 하며, 플랜지의 유효폭은 복부폭의 4배 이하로 취하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4.8.3 T형보의 플랜지의 배근</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>T형보의 플랜지(장선구조 제외)로 취급되는 슬래브에서 주철근이 보의 방향과 같을 때는 다음 요구조건에 따라 보의 직각방향으로 슬래브 상부에 철근을 배치하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(1) 횡방향 철근은 T형보의 내민 플랜지를 캔틸레버로 보고 그 플랜지에 작용하는 계수하중에 대하여 설계하여야 한다. 이 때 독립 T형보의 경우 내민 플랜지 전폭을 유효폭으로 보아야 하며, 그 밖의 T형보의 경우 0503.4.8.1에 따라 계산된 유효폭만 고려하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(2) 횡방향 철근의 간격은 슬래브 두께의 5배 이하로 하여야 하고, 또한 450mm 이하로 하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4.9 장선구조</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4.9.1 장선구조의 조건</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>장선구조로서 역할을 하려면 다음 사항을 만족해야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(1) 장선구조는 일정한 간격의 장선과 그 위의 슬래브가 일체로 되어 있는 구조형태로서, 장선은 1방향 또는 서로 직각을 이루는 2방향으로 구성될 수 있다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(2) 장선은 그 폭이 100mm 이상이어야 하고, 그 높이는 장선의 최소 폭의 3.5배 이하이어야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(3) 장선 사이의 순간격은 750mm를 초과하지 않아야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(4) (1)에서 (3)까지의 제한규정을 만족하지 않는 장선구조는 슬래브와 보로 설계하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4.9.2 설계 고려사항</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>장선구조를 설계할 때 다음 사항을 고려하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(1) 장선에 사용되는 콘크리트의 압축강도 이상의 압축강도를 갖는 영구적인 소성점토 또는 콘크리트 타일로 이루어진 충전재가 사용되는 경우 다음 사항을 고려하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>① 장선과 접합되어 있는 충전재의 수직부분은 전단과 부모멘트의 강도계산에 포함시킬 수 있다. 그러나 충전재의 다른 부분은 강도계산에 포함시킬 수 없다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>② 영구용 충전재 위의 슬래브두께는 장선간 순간격의 1/12 이상, 또한 40mm 이상으로 하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>③ 1방향 장선구조에서는 0505.7의 요구조건에 따라 장선의 직각방향에 수축&#8228;온도철근을 슬래브에 배치하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(2) 위의 (1)항에 따르지 않은 제거용 거푸집 또는 충전재가 사용된 경우 다음 사항을 고려하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>① 슬래브두께는 장선 순간격의 1/12 이상 또한 50mm 이상으로 하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>② 하중의 집중을 고려하여야 할 경우 휨에 필요한 철근을 장선의 직각방향으로 슬래브에 배치하여야 하며, 이 철근은 0505.7에 따라 요구되는 철근량 이상으로 하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>(3) 책임기술자에 의해 슬래브 내에 도관을 묻도록 허가된 경우 슬래브두께가 어느 점에서나 도관의 전체 높이보다 25mm 이상 크게 하여야 한다. 이 때 도관이 장선구조의 강도를 현저하게 감소시키지 않아야 한다.</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>0503.4.9.3 장선구조의 전단강도</SPAN></P>
+
+<P CLASS=HStyle0 STYLE='line-height:145%;'><SPAN STYLE='font-size:8.8pt;font-family:"맑은 고딕";letter-spacing:0.3pt;line-height:145%;'>장선구조에서 콘크리트에 의한 전단강도<IMG src=".\PIC18A5.gif" width="18" height="16" vspace="0" hspace="0" border="0">는 0507에 규정된 전단강도보다 10%만큼 더 크게 취할 수 있다. 또한 전단철근을 사용하거나 장선의 끝부분을 넓게 만들어 전단강도를 증가시킬 수도 있다.</SPAN></P>
+
+<P CLASS=HStyle0><BR></P>
+<BR><BR>
+</BODY>
+
+</HTML>
